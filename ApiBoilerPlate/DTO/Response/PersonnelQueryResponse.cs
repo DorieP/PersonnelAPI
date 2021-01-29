@@ -11,5 +11,7 @@ namespace ApiBoilerPlate.DTO.Response
         public DateTime DateOfBirth { get; set; }
         public string FullName => $"{FirstName} {LastName}";
         public EmployeeType Type { get; set; }
+        public Address Address { get; set; }
+
     }
 }

@@ -43,7 +43,14 @@ namespace ApiBoilerPlate.Test.v1
                     FirstName = "Cersi",
                     LastName = "Lanister",
                     DateOfBirth = Convert.ToDateTime("01/15/1980"),
-                    Type = EmployeeType.Supervisor
+                    Type = EmployeeType.Supervisor,
+                    Address = new Address()
+                    {
+                        StreetName = "4444 Beautiful",
+                        City = "San Diego",
+                        ZipCode = "99999-9999",
+                        State = "CA"
+                    }
                 },
                 new Personnel()
                 {
@@ -82,7 +89,21 @@ namespace ApiBoilerPlate.Test.v1
                 FirstName = "George",
                 LastName = "Carson",
                 DateOfBirth = Convert.ToDateTime("02/15/1990"),
-                Type = EmployeeType.Standard
+                Type = EmployeeType.Standard,
+                Pay = new Payroll
+                {
+                    Type = PayrollType.hourly,
+                    Rate = 15.00F
+                    
+                },
+                Address = new Address
+                {
+                    City = "San Diego",
+                    StreetName = "4452 My Street Way",
+                    ZipCode = "99999-9999",
+                    State = "CA"
+
+                }
             };
         }
 

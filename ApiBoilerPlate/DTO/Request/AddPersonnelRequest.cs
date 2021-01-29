@@ -10,6 +10,8 @@ namespace ApiBoilerPlate.DTO.Request
         public string LastName { get; set; }
         public DateTime DateOfBirth { get; set; }
         public EmployeeType Type { get; set; }
+        public Payroll Pay { get; set; }
+        public Address Address { get; set; }
     }
 
     public class CreatePersonnelRequestValidator : AbstractValidator<AddPersonnelRequest>

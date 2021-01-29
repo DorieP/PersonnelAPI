@@ -10,5 +10,7 @@ namespace ApiBoilerPlate.Data.Entity
         public DateTime DateOfBirth { get; set; }
         // This is an Enum, in the db will have a constraint to be only the enum values 
         public EmployeeType Type { get; set; }
+        public Payroll Pay { get; set; }
+        public Address Address { get; set; }
     }
 }
